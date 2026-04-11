@@ -3620,6 +3620,48 @@ h1.post__title {
 	background-color: var(--dark-bg);
 }
 
+.aximo-more-btn {
+	border-radius: 50px;
+	width: 210px;
+	padding: 13px 10px 13px 42px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 10px;
+	position: relative;
+	text-align: left;
+	justify-content: space-between;
+	color: var(--heading-color) !important;
+	border: 2px solid var(--dark-bg);
+	background-color: var(--accent-bg);
+	box-shadow: 0px 4px 0px 0px var(--dark-bg);
+	transition: all 0.4s;
+}
+@media (max-width: 400px) {
+	.aximo-more-btn {
+		width: 100%;
+		padding: 13px 10px 13px 25px;
+	}
+}
+.aximo-more-btn:hover {
+	box-shadow: none;
+}
+.aximo-more-btn i {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	font-size: 24px;
+	color: var(--white-smoke);
+	transform: translateY(-50%);
+	background-color: var(--dark-bg);
+}
+
 @keyframes rotate-animation {
 	0% {
 		transform: rotate(0deg);

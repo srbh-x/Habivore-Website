@@ -23,8 +23,7 @@ function About() {
 						</div>
 						<div className="col-lg-4 offset-lg-1 d-flex align-items-center">
 							<p>
-								We work closely with our clients to know their objectives, target audience, unique
-								needs, and practical design solutions.
+								We work closely with our clients to understand their goals, audience, and vision — then execute everything from design to development and marketing with precision.
 							</p>
 						</div>
 					</div>
