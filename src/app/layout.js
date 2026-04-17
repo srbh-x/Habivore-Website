@@ -46,8 +46,8 @@
 import { inter, syne } from "./fonts";
 
 export const metadata = {
-  title: "Aximo || Responsive Next.js Template",
-  description: "Aximo || Responsive Next.js Template",
+  title: "The 8 Verse | Brand Growth Studio",
+  description: "The 8 Verse | Brand Growth Studio",
 };
 
 export default function RootLayout({ children }) {
