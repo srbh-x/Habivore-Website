@@ -6,20 +6,20 @@ function Content() {
 		<div className="aximo-default-content">
 			<h2>
 				<span className="aximo-title-animation">
-					Our high-quality
+					How we turn
 					<span className="aximo-title-icon">
 						<Image src={Star2Img} alt="Star2Img" />
 					</span>
 				</span>
-				working processes
+				<span className="aximo-title-animation">
+					ideas into growth
+				</span>
 			</h2>
 			<p>
-				We focus at every stage on effective communication and collaboration between the client and ensuring
-				that the final design meets the client s objectives and expectations.
+				Every project starts with a conversation and ends with results. We take time to understand your business, your goals, and what success truly means for you.
 			</p>
 			<p>
-				It is important to note that these are simplified steps, and the actual work process may vary depending
-				on the complexity of the project.
+				From strategy to execution, we move fast, stay focused, and keep things simple so you spend less time managing agencies and more time growing your business.
 			</p>
 		</div>
 	);

@@ -10,42 +10,42 @@ import Team3Img from "../../../public/images/team/team3.png";
 import Team4Img from "../../../public/images/team/team4.png";
 
 const teamsData = [
-	{
-		id: crypto.randomUUID(),
-		name: "Andrew Mark",
-		designation: "Creative Director",
-		img: Team1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		name: "Jack Taylor",
-		designation: "Senior Designer",
-		img: Team2Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		name: "Martine Joy",
-		designation: "Project Manager",
-		img: Team3Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		name: "Adam Straw",
-		designation: "Web Developer",
-		img: Team4Img,
-	},
+  {
+    id: crypto.randomUUID(),
+    name: "Andrew Mark",
+    designation: "Creative Director",
+    img: Team1Img,
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Jack Taylor",
+    designation: "Senior Designer",
+    img: Team2Img,
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Martine Joy",
+    designation: "Project Manager",
+    img: Team3Img,
+  },
+  {
+    id: crypto.randomUUID(),
+    name: "Adam Straw",
+    designation: "Web Developer",
+    img: Team4Img,
+  },
 ];
 
 function AboutUs() {
-	return (
-		<>
-			<BreadCrumb title="About Us" />
-			<About />
-			<Story />
-			<AutoSlider />
-			<Teams teams={teamsData} />
-		</>
-	);
+  return (
+    <>
+      <BreadCrumb title="About Us" />
+      <Story />
+      <AutoSlider />
+      <About />
+      {/* <Teams teams={teamsData} /> */}
+    </>
+  );
 }
 
 export default AboutUs;

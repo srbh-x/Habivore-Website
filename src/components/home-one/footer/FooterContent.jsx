@@ -15,15 +15,14 @@ function FooterContent() {
 				something great together
 			</h2>
 			<p>
-				We work closely with our clients to understand their objectives, target audience, and unique needs. We
-				use our creative skills to translate these requirements and practical design solutions.
+				Have a project in mind or just exploring your options? We'd love to hear from you. Whether you're a startup finding your footing, a business ready to scale, or an enterprise looking for a sharper edge.The8verse is ready to help you grow.
 			</p>
 			<div className="aximo-info-wrap">
 				<div className="aximo-info">
 					<ul>
 						<li>Give us a call:</li>
 						<li>
-							<a href="tel:(123) 456-7890">(123) 456-7890</a>
+							<a href="tel:+91 9847990284">+91 9847990228</a>
 						</li>
 					</ul>
 				</div>
@@ -31,7 +30,7 @@ function FooterContent() {
 					<ul>
 						<li>Send us an email:</li>
 						<li>
-							<a href="mailto:info@mthemeus.com">info@mthemeus.com</a>
+							<a href="mailto:team@habivore.com">team@habivore.com</a>
 						</li>
 					</ul>
 				</div>
@@ -49,7 +48,7 @@ function FooterContent() {
 						</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/" target="_blank">
+						<a href="https://www.instagram.com/habivore" target="_blank">
 							<i className="icon-instagram"></i>
 						</a>
 					</li>

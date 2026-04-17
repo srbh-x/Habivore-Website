@@ -9,18 +9,17 @@ function Story() {
 				<div className="aximo-section-title center title-description">
 					<h2>
 						<span className="aximo-title-animation">
-							We think our story is
+							We're Just Getting
 							<span className="aximo-title-icon">
 								<Image src={Star2Img} alt="star" />
 							</span>
 						</span>
-						worth sharing with you
+						Started
 					</h2>
 					<p>
-						Established in 2008, we began as a small but ambitious team. We understood the importance of
-						creative and tech-savvy solutions to help businesses succeed in the ever-changing digital
-						landscape.
+						The8verse was born in 2026 with a simple but powerful belief that businesses deserve more than disconnected agencies, generic strategies, and slow execution. We built a growth studio where branding, technology, marketing, and media work together as one because that's the only way real growth happens.
 					</p>
+					<p>Most agencies hand over a deliverable and walk away. We don't. The8verse stays with you from your very first brand decision to post-launch acceleration and beyond. Whether you're just starting out or already in the market and ready to scale, we're built to grow with you at every stage. In a short time, we've had the privilege of working with businesses across 6+ countries delivering projects across branding, product development, marketing, and media production. Every project has made us sharper, faster, and better at what we do.</p>
 				</div>
 
 				<StoryPhotos />

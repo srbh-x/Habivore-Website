@@ -12,16 +12,15 @@ function HeroContent() {
 			<FadeInStaggerTwoChildren>
 				<h1>
 					<span className="aximo-title-animation">
-						We build
+						We Build
 						<Image src={StarImg} alt="StarImg" />
 					</span>{" "}
-					brands that scale
+					Brands That Grow
 				</h1>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren>
 				<p>
-					{`We help businesses build, grow, and scale through branding, websites, marketing, and production — all in one place.
-						No juggling agencies. No delays. Just seamless execution and real results.`}
+					{`The8verse is a growth studio for brands that mean business. We think, build, and launch everything your brand needs faster than you'd expect, better than you'd imagine.`}
 				</p>
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren>
@@ -44,7 +43,7 @@ function HeroContent() {
 			</FadeInStaggerTwoChildren>
 			<FadeInStaggerTwoChildren>
 				<Link className="aximo-call-btn" href="/contact-us">
-					Book a free consultation <i className="icon-call"></i>
+					Book a Free Strategy Call<i className="icon-call"></i>
 				</Link>
 				<div className="aximo-hero-shape">
 					<Image src={ShapeImg} alt="ShapeImg" />
