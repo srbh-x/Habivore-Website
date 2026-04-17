@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import ContactThumb from "../../public/images/contact/contact-thumb.png";
 import Star2Img from "../../public/images/v1/star2.png";
 import FadeInRight from "../animation/FadeInRight";
@@ -9,10 +11,32 @@ function ContactForm() {
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors },
 	} = useForm();
+
+	const [loading, setLoading] = useState(false);
+	const [success, setSuccess] = useState(false);
+
 	const submitForm = (formData) => {
-		console.log("Submite Form Data = ", formData);
+		setLoading(true);
+
+		emailjs
+			.send(
+				"service_tqsn2rs",
+				"template_r3kc1un",
+				formData,
+				"vu-I-dIwbYOYYVFlh"
+			)
+			.then(() => {
+				setSuccess(true);
+				setLoading(false);
+				reset();
+				setTimeout(() => setSuccess(false), 5000);
+			})
+			.catch(() => {
+				setLoading(false);
+			});
 	};
 	return (
 		<div className="section aximo-section-padding">
@@ -74,11 +98,19 @@ function ContactForm() {
 								</div>
 								<div className="aximo-main-field">
 									<label>Write your message here...</label>
-									<textarea name="textarea"></textarea>
+									<textarea
+										{...register("message", { required: "Message is required." })}
+										name="message"
+									></textarea>
 								</div>
-								<button id="aximo-main-btn" type="submit">
-									Send Message
+								<button id="aximo-main-btn" type="submit" disabled={loading}>
+									{loading ? "Sending..." : success ? "Message Sent!" : "Send Message"}
 								</button>
+								{success && (
+									<p style={{ color: "green", marginTop: "10px" }}>
+										Your message has been sent successfully!
+									</p>
+								)}
 							</form>
 						</div>
 					</div>
