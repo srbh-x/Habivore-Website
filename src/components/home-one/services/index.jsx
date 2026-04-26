@@ -38,7 +38,7 @@ function Services({ services, showViewMoreButton = false, showViewPortfolioButto
 					</div>
 					<div class="col-lg-6">
 						{showViewMoreButton && (
-							<Link className="aximo-more-btn" href="/portfolio">
+							<Link className="aximo-more-btn" href="/services">
 								View All Services
 								<span>
 									<Image src={ArrowRight3Img} alt="ArrowRight3Img" />

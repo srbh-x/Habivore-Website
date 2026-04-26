@@ -11,7 +11,7 @@ export default function ThankYou() {
   return (
     <>
       <Hero />
-      <Services services={serviceCardData} showViewMoreButton={true} />
+      <Services services={serviceCardData} showViewPortfolioButton={true} />
       <About />
       <Projects />
       <WhyChooseUs />
