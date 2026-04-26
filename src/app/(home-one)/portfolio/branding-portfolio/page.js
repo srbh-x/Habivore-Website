@@ -15,4 +15,10 @@ function SinglePortfolio() {
   );
 }
 
+export const metadata = {
+  title: "Branding Portfolio | Brand Identity Design Projects",
+  description:
+    "Explore The 8 Verse branding portfolio featuring logo design, brand identity systems, and strategic branding projects built to help businesses stand out and scale.",
+};
+
 export default SinglePortfolio;

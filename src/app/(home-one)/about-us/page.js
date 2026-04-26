@@ -48,4 +48,10 @@ function AboutUs() {
   );
 }
 
+export const metadata = {
+  title: "About Us",
+  description:
+    "Learn how The 8 Verse helps startups and businesses grow through branding, technology, marketing, and media with a unified, results-driven approach.",
+};
+
 export default AboutUs;

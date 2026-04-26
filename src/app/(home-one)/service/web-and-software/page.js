@@ -18,4 +18,10 @@ function WebAndSoftware() {
   );
 }
 
+export const metadata = {
+  title: "Web Development & Software Solutions",
+  description:
+    "Custom websites, web apps, and scalable software solutions built for performance, growth, and seamless user experience.",
+};
+
 export default WebAndSoftware;

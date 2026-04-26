@@ -15,4 +15,10 @@ function SinglePortfolio() {
   );
 }
 
+export const metadata = {
+  title: "Marketing Portfolio | SEO & Growth Campaign Case Studies",
+  description:
+    "Discover The 8 Verse marketing portfolio featuring SEO, paid ads, and growth campaigns designed to drive traffic, leads, and measurable business results.",
+};
+
 export default SinglePortfolio;

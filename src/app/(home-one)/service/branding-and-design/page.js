@@ -20,4 +20,10 @@ function BrandingAndDesign() {
   );
 }
 
+export const metadata = {
+  title: "Branding & Design Services",
+  description:
+    "Build a powerful brand identity with logo design, visual systems, and brand strategy tailored to help your business stand out and scale.",
+};
+
 export default BrandingAndDesign;

@@ -15,4 +15,10 @@ function SinglePortfolio() {
   );
 }
 
+export const metadata = {
+  title: "Web Development Portfolio | Website Design Projects",
+  description:
+    "Explore The 8 Verse web development portfolio featuring high-performance websites, web apps, and scalable digital solutions built for growth and user experience.",
+};
+
 export default SinglePortfolio;

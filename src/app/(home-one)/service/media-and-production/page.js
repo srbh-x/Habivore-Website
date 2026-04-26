@@ -20,4 +20,10 @@ function MediaAndProduction() {
   );
 }
 
+export const metadata = {
+  title: "Media Production & Content Services",
+  description:
+    "High-impact video, photography, and content production that builds trust, captures attention, and drives engagement.",
+};
+
 export default MediaAndProduction;

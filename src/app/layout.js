@@ -46,8 +46,81 @@
 import { inter, syne } from "./fonts";
 
 export const metadata = {
-  title: "The 8 Verse | Brand Growth Studio",
-  description: "The 8 Verse | Brand Growth Studio",
+  metadataBase: new URL("https://the8verse.com"),
+
+  title: {
+    default: "The 8 Verse | Brand Growth Studio for Startups & Businesses",
+    template: "%s | The 8 Verse",
+  },
+
+  description:
+    "The 8 Verse is a full-service brand growth studio helping startups and businesses scale through branding, web development, SEO, marketing, and media production—all in one place.",
+
+  keywords: [
+    "brand growth studio",
+    "digital marketing agency",
+    "web development company",
+    "SEO services",
+    "branding agency",
+    "startup growth",
+    "creative production",
+  ],
+
+  authors: [{ name: "The 8 Verse" }],
+  creator: "The 8 Verse",
+  publisher: "The 8 Verse",
+
+  openGraph: {
+    title: "The 8 Verse | Brand Growth Studio",
+    description:
+      "Scale your brand with web, SEO, marketing, and creative services from The 8 Verse.",
+    url: "https://the8verse.com",
+    siteName: "The 8 Verse",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The 8 Verse Brand Growth Studio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "The 8 Verse | Brand Growth Studio",
+    description:
+      "Helping brands grow with websites, SEO, marketing, and content production.",
+    images: ["/og-image.png"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://the8verse.com",
+  },
+
+  manifest: "/site.webmanifest",
+
+  category: "business",
 };
 
 export default function RootLayout({ children }) {

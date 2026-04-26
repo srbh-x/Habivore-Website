@@ -37,7 +37,7 @@
   .site-navbar .menu-block-wrapper {
     display: flex !important;
     flex-basis: auto;
-    justify-content: center;
+    justify-content: right;
   }
 }
 
@@ -314,7 +314,7 @@
 .site-menu-main {
   margin-bottom: 0;
   padding-left: 0;
-  gap: 10rem;
+  padding-right: 10px;
 }
 
 @media (min-width: 992px) {

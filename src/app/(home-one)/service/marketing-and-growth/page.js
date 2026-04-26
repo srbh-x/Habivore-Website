@@ -20,4 +20,10 @@ function MarketingAndGrowth() {
   );
 }
 
+export const metadata = {
+  title: "Digital Marketing & Growth Services",
+  description:
+    "Drive traffic, leads, and revenue with SEO, paid ads, and data-driven marketing strategies designed for sustainable growth.",
+};
+
 export default MarketingAndGrowth;

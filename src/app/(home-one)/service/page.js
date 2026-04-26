@@ -10,7 +10,7 @@ function ServicePage() {
   return (
     <>
       <BreadCrumb title="Service" />
-      <Services services={serviceCardData} isServiceButton={true} />
+      <Services services={serviceCardData} showViewPortfolioButton={true}/>
       <AutoSlider />
       <WhyChooseUs />
       <AutoSlider />
@@ -19,5 +19,11 @@ function ServicePage() {
     </>
   );
 }
+
+export const metadata = {
+  title: "Our Services",
+  description:
+    "Explore branding, web development, SEO, marketing, and media production services designed to help businesses scale faster with The 8 Verse.",
+};
 
 export default ServicePage;

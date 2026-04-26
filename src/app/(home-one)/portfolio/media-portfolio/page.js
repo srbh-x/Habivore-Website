@@ -15,4 +15,10 @@ function SinglePortfolio() {
   );
 }
 
+export const metadata = {
+  title: "Media Production Portfolio | Video & Content Projects",
+  description:
+    "Explore The 8 Verse media portfolio featuring video production, photography, and content creation projects designed to build brand presence and engagement.",
+};
+
 export default SinglePortfolio;
