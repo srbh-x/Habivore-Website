@@ -37,23 +37,23 @@ function FooterContent() {
 			</div>
 			<div className="aximo-social-icon social-large">
 				<ul>
-					<li>
+					{/* <li>
 						<a href="https://twitter.com/" target="_blank">
 							<i className="icon-twitter"></i>
 						</a>
-					</li>
-					<li>
+					</li> */}
+					{/* <li>
 						<a href="https://facebook.com/" target="_blank">
 							<i className="icon-facebook"></i>
 						</a>
-					</li>
-					<li>
+					</li> */}
+					{/* <li>
 						<a href="https://www.instagram.com/habivore" target="_blank">
 							<i className="icon-instagram"></i>
 						</a>
-					</li>
+					</li> */}
 					<li>
-						<a href="https://www.linkedin.com/" target="_blank">
+						<a href="https://www.linkedin.com/company/the8verse/" target="_blank">
 							<i className="icon-linkedin"></i>
 						</a>
 					</li>
