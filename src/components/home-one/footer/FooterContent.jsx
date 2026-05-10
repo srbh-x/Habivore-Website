@@ -47,11 +47,11 @@ function FooterContent() {
 							<i className="icon-facebook"></i>
 						</a>
 					</li> */}
-					{/* <li>
+					<li>
 						<a href="https://www.instagram.com/habivore" target="_blank">
 							<i className="icon-instagram"></i>
 						</a>
-					</li> */}
+					</li>
 					<li>
 						<a href="https://www.linkedin.com/company/the8verse/" target="_blank">
 							<i className="icon-linkedin"></i>
