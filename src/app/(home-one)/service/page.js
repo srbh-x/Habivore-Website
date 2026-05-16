@@ -65,7 +65,7 @@ function ServicePage() {
 	return (
 		<>
 			<BreadCrumb title="Service" />
-			<Services services={services} />
+			<Services services={services} showAllServices={true} />
 			<AutoSlider />
 			<WhyChooseUs />
 			<TwoColumnFaq />

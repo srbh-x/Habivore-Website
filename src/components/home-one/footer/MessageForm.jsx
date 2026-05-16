@@ -39,7 +39,15 @@ function MessageForm() {
 				</Field>
 			</div>
 			<div className="aximo-form-field">
-				<input type="text" placeholder="+088-234-6849" />
+				<Field error={errors.phone}>
+					<input
+						{...register("phone", { required: "Phone number is required." })}
+						type="tel"
+						name="phone"
+						id="phone"
+						placeholder="Your Phone Number"
+					/>
+				</Field>
 			</div>
 			<div className="aximo-form-field">
 				<textarea name="textarea" placeholder="Write your message here..."></textarea>

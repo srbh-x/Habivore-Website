@@ -17,6 +17,10 @@ function Header() {
 					<HeaderLogo />
 					<div className="menu-block-wrapper">
 						<DesktopNav>
+							<NavItem url="/">Home</NavItem>
+							<NavItem url="about-us">About Us</NavItem>
+							<NavItem url="service">Services</NavItem>
+							<NavItem url="contact-us">Contact Us</NavItem>
 							<NavItem dropdown title="Demo">
 								<Dropdown>
 									<DropdownItem url="/">Design Agency</DropdownItem>
@@ -28,7 +32,6 @@ function Header() {
 									<DropdownItem url="home-seven">Advertising agency</DropdownItem>
 								</Dropdown>
 							</NavItem>
-							<NavItem url="about-us">About Us</NavItem>
 							<NavItem dropdown title="Pages">
 								<Dropdown>
 									<DropdownItem url="about-us">About Us</DropdownItem>
