@@ -12,39 +12,31 @@ import ProjectCard from "./ProjectCard";
 const projectsData = [
 	{
 		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
+		title: "Branding and Design",
+		description: "We build bold brand identities that stand out and scale",
 		img: Project1Img,
+		link: "/portfolio/branding-portfolio",
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a company&apos;s logo and developing a cohesive visual identity.",
+		title: "Web and Software",
+		description: "We build the technology your business needs to operate, scale, and grow",
 		img: Project2Img,
+		link: "/portfolio/web-portfolio",
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "App UI/UX Design",
-		description: "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
+		title: "Marketing and Growth",
+		description: "We drive visibility, leads, and revenue through smart strategies",
 		img: Project3Img,
+		link: "/portfolio/marketing-portfolio",
 	},
 	{
 		id: crypto.randomUUID(),
-		title: "Packaging Design",
-		description: "Creating packaging solutions for products that not only protect attract customers on store.",
+		title: "Media and Production",
+		description: "We create high-impact content that captures attention and converts",
 		img: Project4Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
-		img: Project1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a company&apos;s logo and developing a cohesive visual identity.",
-		img: Project2Img,
+		link: "/portfolio/media-portfolio",
 	},
 ];
 
@@ -74,9 +66,9 @@ function Projects() {
 			<div className="container">
 				<div className="aximo-section-title center light">
 					<h2>
-						Have a wide range of
+						Our work
 						<span className="aximo-title-animation">
-							creative projects
+							speaks for itself
 							<span className="aximo-title-icon">
 								<Image src={Star2Img} alt="Star2Img" />
 							</span>

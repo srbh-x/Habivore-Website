@@ -4,57 +4,41 @@ import Image from "next/image";
 import Single1Img from "../../../public/images/portfolio/p_single.png";
 import Single2Img from "../../../public/images/portfolio/p_single2.png";
 import Star2Img from "../../../public/images/v1/star2.png";
-const projectResolveSteps = [
-	{
-		id: crypto.randomUUID(),
-		title: "Concept Development",
-		text: "Based on the market research findings, the design team began developing conceptual designs for the smart thermostat. They brainstormed ideas, created mood boards, and explored various design directions.",
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Manufacturing and Production",
-		text: "Once the design was finalized, the project transitioned to the manufacturing phase. Materials, suppliers, and production processes were carefully selected to ensure quality and cost-effectiveness.",
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Success and Impact",
-		text: "The smart home thermostat quickly gained popularity and was well-received in the market. The project was a success, benefiting both the company and the environment.",
-	},
-];
-function PortfolioDetails() {
+import SinglePortfolioDetails from "@/mock-data/singlePortfolioDetails";
+
+export default function PortfolioDetails({ data }) {
+
+	if (!data) return <div>Portfolio not found</div>;
+
+	const { image1, image2, info, intro, steps } = data;
+
 	return (
 		<div className="aximo-project-single-section">
 			<div className="container">
+
 				<FadeInUp className="aximo-project-single-thumb">
-					<Image src={Single1Img} alt="Single" />
+					<Image src={image1} alt="Single" />
 				</FadeInUp>
+
 				<div className="aximo-project-info-wrap">
 					<div className="aximo-project-info">
-						<h3>Client:</h3>
-						<p>Alfado Company,UK</p>
-					</div>
-					<div className="aximo-project-info">
-						<h3>Date:</h3>
-						<p>June</p>
-					</div>
-					<div className="aximo-project-info">
-						<h3>Duration:</h3>
-						<p>Two Months</p>
-					</div>
-					<div className="aximo-project-info">
-						<h3>Cost:</h3>
-						<p>50k USD</p>
+						<h3>Clients from :</h3>
+						<h3>{info.client}</h3>
 					</div>
 				</div>
+
 				<div className="aximo-project-single-wrap">
 					<div className="row">
+
 						<div className="col-lg-4 order-lg-2">
-							<FadeInRight className="aximo-project-single-thumb2 ">
-								<Image src={Single2Img} alt="Single 2" sizes="100vw" />
+							<FadeInRight className="aximo-project-single-thumb2">
+								<Image src={image2} alt="Single 2" sizes="100vw" />
 							</FadeInRight>
 						</div>
+
 						<div className="col-lg-8">
 							<div className="aximo-default-content m-right-gap">
+
 								<h2>
 									How we initiate and
 									<span className="aximo-title-animation">
@@ -64,12 +48,11 @@ function PortfolioDetails() {
 										</span>
 									</span>
 								</h2>
-								<p>
-									The project began when a leading technology identified a market need for an
-									innovative and energy-efficient smart home thermostat.
-								</p>
+
+								<p>{intro}</p>
+
 								<div className="aximo-resolve-project-wrap">
-									{projectResolveSteps.map((item, index) => (
+									{steps.map((item, index) => (
 										<div key={item.id} className="aximo-resolve-project-item">
 											<h3>
 												{index + 1}. {item.title}:
@@ -78,13 +61,14 @@ function PortfolioDetails() {
 										</div>
 									))}
 								</div>
+
 							</div>
 						</div>
+
 					</div>
 				</div>
+
 			</div>
 		</div>
 	);
 }
-
-export default PortfolioDetails;

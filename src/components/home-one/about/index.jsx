@@ -13,17 +13,17 @@ function About() {
 						<div className="col-lg-7">
 							<h2>
 								<span className="aximo-title-animation">
-									We make your
+									Results Built on
 									<span className="aximo-title-icon">
 										<Image src={Star2Img} alt="Star2Img" />
 									</span>
 								</span>{" "}
-								business stand out
+								Experience
 							</h2>
 						</div>
 						<div className="col-lg-4 offset-lg-1 d-flex align-items-center">
 							<p>
-								We work closely with our clients to understand their goals, audience, and vision — then execute everything from design to development and marketing with precision.
+								We work as an extension of your team understanding your goals, your audience, and your market. Then bring together branding, technology, marketing, and media to deliver results that move the needle.
 							</p>
 						</div>
 					</div>

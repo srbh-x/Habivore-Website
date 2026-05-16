@@ -5,26 +5,8 @@ import Portfolio3Img from "../../../public/images/portfolio/p_11.png";
 import Portfolio1Img from "../../../public/images/portfolio/p_9.png";
 import Star2Img from "../../../public/images/v1/star2.png";
 import PortfolioCard from "./PortfolioCard";
-const portfolioListData = [
-	{
-		id: crypto.randomUUID(),
-		title: "Product Design",
-		description: "Developing the look and feel of physical products, aesthetics, and functionality.",
-		img: Portfolio1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "Logo and Branding",
-		description: "Creating or refreshing a companys logo and developing a cohesive visual identity.",
-		img: Portfolio2Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		title: "App UI/UX Design",
-		description: "Designing the UI/UXe for mobile apps and web applications to ensure usability & engagement.",
-		img: Portfolio3Img,
-	},
-];
+import { portfolioListData } from "@/mock-data/portfoliListData";
+
 function PortfolioList() {
 	return (
 		<div className="aximo-project-one-column">

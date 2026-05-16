@@ -1,84 +1,71 @@
 import Image from "next/image";
-import SingleImg from "../../public/images/service/service-single.png";
-import Star2Img from "../../public/images/v1/star2.png";
 import FadeInUp from "../animation/FadeInUp";
 import WorkingApproach from "./WorkingApproach";
-function ServiceDetails() {
+// import services from "@/data/services/serviceDetailsData";
+import serviceDatas from "@/mock-data/serviceDatas";
+
+function ServiceDetails({ type }) {
+	const data = serviceDatas[type];
+
+	// fallback safety
+	if (!data) {
+		return <div className="container">Service not found</div>;
+	}
+
+	const { image, starIcon, title, description, sections } = data;
+
 	return (
 		<div className="section aximo-section-padding2 pb-0">
 			<div className="container">
 				<div className="aximo-service-details-wrap">
+
+					{/* Image */}
 					<FadeInUp className="aximo-service-details-thumb">
-						<Image src={SingleImg} alt="Single img" sizes="100vw" />
+						<Image src={image} alt="Service image" sizes="100vw" />
 					</FadeInUp>
+
+					{/* Title + Description */}
 					<div className="row">
 						<div className="col-lg-8">
 							<div className="aximo-default-content">
 								<h2>
 									<span className="aximo-title-animation">
-										UI/UX for modern
+										{title.line1}
 										<span className="aximo-title-icon">
-											<Image src={Star2Img} alt="star" />
+											<Image src={starIcon} alt="star" />
 										</span>
 									</span>
-									product development
+									{title.line2}
 								</h2>
-								<p>
-									UI/UX, which stands for User Interface (UI) and User Experience (UX), are two
-									critical components of software design and development of websites and applications.
-								</p>
-								<p>
-									They are often used interchangeably, but they refer to different aspects of the
-									design and user interaction process. Here&apos;s a brief overview of each:
-								</p>
+
+								{description.map((para, index) => (
+									<p key={index}>{para}</p>
+								))}
 							</div>
 						</div>
 					</div>
+
+					{/* Sections */}
 					<div className="row">
-						<div className="col-lg-6">
-							<div className="aximo-user-interface">
-								<h3>1/ User Interface (UI):</h3>
-								<ul>
-									<li>
-										UI refers to the visual elements and the overall look and feel of a product. It
-										encompasses the design of screens, pages, buttons, icons, and any other visual
-										elements users interact with.
-									</li>
-									<li>
-										UI designers are responsible for creating a visually appealing and consistent
-										design that aligns with the brand or product&apos;s identity.
-									</li>
-									<li>
-										Key aspects of UI design include layout, color schemes, typography, icons, and
-										graphical elements.
-									</li>
-								</ul>
+						{sections.map((section, index) => (
+							<div className="col-lg-6" key={index}>
+								<div className="aximo-user-interface">
+									<h3>{section.title}</h3>
+									<ul>
+										{section.points.map((point, i) => (
+											<li key={i}>{point}</li>
+										))}
+									</ul>
+								</div>
 							</div>
-						</div>
-						<div className="col-lg-6">
-							<div className="aximo-user-interface">
-								<h3>2/ User Experience (UX):</h3>
-								<ul>
-									<li>
-										UX focuses on the overall experience of the user when interacting with a
-										product. It encompasses how users feel when they use the product and how easy or
-										challenging it is to accomplish their goals.
-									</li>
-									<li>
-										UX designers work to understand the user&apos;s needs, behaviors, and pain
-										points, and they design the product maximizes user satisfaction.
-									</li>
-									<li>
-										Key aspects of UX design include research, information architecture,
-										wireframing, prototyping, usability testing, and user journey mapping.
-									</li>
-								</ul>
-							</div>
-						</div>
+						))}
 					</div>
+
+					{/* Extra Component */}
 					<div className="aximo-faq-wrap">
-						<WorkingApproach />
+						<WorkingApproach type={type} />
 					</div>
+
 				</div>
 			</div>
 		</div>

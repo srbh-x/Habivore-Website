@@ -24,7 +24,7 @@ const blogData = [
 		id: crypto.randomUUID(),
 		title: "I run a $10,000/month business with 0 employees, here&apos;s how I use AI tools",
 		content:
-			"Making more money with the help of AI tools. — Up until now, I’ve shared two posts discussing the AI tools I’ve incorporated into my",
+			"Making more money with the help of AI tools. Up until now, I’ve shared two posts discussing the AI tools I’ve incorporated into my",
 		category: "Business",
 		date: "June 18, 2024",
 		img: Blog2Img,
@@ -33,7 +33,7 @@ const blogData = [
 		id: crypto.randomUUID(),
 		title: "Technical loan, product loan or business loan: different types and how to deal withit",
 		content:
-			"Tech debt part two — a deeper dive into product and business debt and the ripple effect on organizations — in part one",
+			"Tech debt part two a deeper dive into product and business debt and the ripple effect on organizations in part one",
 		category: "Technology",
 		date: "June 18, 2024",
 		img: Blog3Img,

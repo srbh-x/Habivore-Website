@@ -1,16 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import ArrowRightImg from "../../../public/images/icon/arrow-right.svg";
-function ServiceCard({ service: { title, description, icon } }) {
+
+function ServiceCard({ service: { title, description, icon: Icon, slug } }) {
+	console.log("The slg coming is", slug)
 	return (
 		<div className="aximo-iconbox-wrap">
 			<div className="aximo-iconbox-icon">
-				<i className={`${icon}`}></i>
+				{typeof Icon === "string" ? (
+					<i className={Icon}></i>
+				) : (
+					Icon && <Icon />
+				)}
 			</div>
+
 			<div className="aximo-iconbox-data">
 				<h3>{title}</h3>
 				<p>{description}</p>
-				<Link href="/single-service" className="aximo-icon">
+				<Link href={`/service/${slug}`} className="aximo-icon">
 					<Image src={ArrowRightImg} alt="arrow right" />
 				</Link>
 			</div>
